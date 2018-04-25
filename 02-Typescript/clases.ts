@@ -34,3 +34,15 @@ class UsuarioDos{
 let david2 :UsuarioDos=new UsuarioDos("david",false,22);
 console.log(david2)
 console.log(david2.imrpimirUsuario("hola"));
+
+let carla: UsuarioTres={
+    nombre:"david",
+    edad:28
+}
+
+interface UsuarioTres{
+    nombre: string;
+    casado?:boolean;
+    edad:number
+}
+console.log(carla);

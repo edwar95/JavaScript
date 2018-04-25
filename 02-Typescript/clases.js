@@ -37,3 +37,8 @@ var UsuarioDos = /** @class */ (function () {
 var david2 = new UsuarioDos("david", false, 22);
 console.log(david2);
 console.log(david2.imrpimirUsuario("hola"));
+var carla = {
+    nombre: "david",
+    edad: 28
+};
+console.log(carla);

@@ -58,6 +58,9 @@ function (usuario) {
 })
     .filter(function (usuario) {
     return usuario.deuda < 50;
+})
+    .some(function (usuario) {
+    return usuario.edad < 18;
 });
 function calcularDeuda(edadUsuario) {
     var totalEdad = arregloUsuarios.reduce(function (total, usuario) {

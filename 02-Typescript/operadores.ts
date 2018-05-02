@@ -83,7 +83,12 @@ let nuevoArregloDeUsuarios= arregloUsuarios.map(//arreglo transformado o mutado
     )
     .filter(
         (usuario:UsuarioArreglo)=>{
-            return usuario.deuda<50
+            return usuario.deuda<50;
+        }
+    )
+    .some(
+        (usuario:UsuarioArreglo)=>{
+            return usuario.edad<18;
         }
     )
 
